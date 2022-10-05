@@ -5,20 +5,20 @@ import Booking from '../pages/bookingPage'
 import Live from '../pages/liveMassPage'
 import About from '../pages/aboutUsPage'
 
-import { Navlinks } from '../components/Navlinks'
-// import Sidebar from '../components/Sidebar';
+// import { Navlinks } from '../components/Navlinks'
+import Sidebar from '../components/Sidebar';
 
 
 const Routing = () => {
     return (
         <Router>
-            <Navlinks />
+            <Sidebar />
             <Routes>
-                <Route path='/' element={<Home />} />
-                <Route path='/booking' element={<Booking />} />
-                <Route path='/live' element={<Live />} />
-                <Route path='/about' element={<About />} /> 
-                <Route path='*' element={<h1>Error: Page not found</h1>} /> 
+                <Route path='/' exact element = {<Home />} />
+                <Route path='/booking' element = {<Booking />} />
+                <Route path='/live' element = {<Live />} />
+                <Route path='/about' element = {<About />} /> 
+                <Route path='*' element = {<h1>Error: Page not found</h1>} /> 
             </Routes>
         </Router>
     )

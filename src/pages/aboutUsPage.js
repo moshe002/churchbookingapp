@@ -1,6 +1,8 @@
 function aboutUs () {
     return (
-        <h2>about us page</h2>
+        <div className="flex justify-center items-center"> 
+            <h2>about us page</h2>
+        </div>
     )
 }
 

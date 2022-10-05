@@ -1,6 +1,8 @@
 function liveMassPage () {
     return (
-        <h2>live mass page</h2>
+        <div className="flex justify-center items-center">
+            <h2>live mass page</h2>
+        </div>
     )
 }
 

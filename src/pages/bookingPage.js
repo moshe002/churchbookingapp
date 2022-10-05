@@ -1,6 +1,8 @@
 function bookingPage () {
     return (
-        <h2>booking page</h2>
+        <div className="flex justify-center items-center">
+            <h2>booking page</h2>
+        </div>
     )
 }
 

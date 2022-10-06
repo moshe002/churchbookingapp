@@ -7,7 +7,7 @@ import { Navlinks } from '../components/Navlinks'
 
 const Sidebar = () => {
 
-    const [open, setOpen] = useState(true)
+    const [open, setOpen] = useState(false)
 
     return (
         <div className="flex float-left">

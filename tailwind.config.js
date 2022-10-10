@@ -9,6 +9,9 @@ module.exports = {
         "dark-purple": "#081A51",
         "light-white": "rgba(255,255,255,0.17)",
       },
+      backgroundImage: {
+        'home-header-bg': "url('./assets/church bg.jpg')",
+      },
     },
   },
   plugins: [],

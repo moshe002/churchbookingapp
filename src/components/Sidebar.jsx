@@ -10,8 +10,8 @@ const Sidebar = () => {
     const [open, setOpen] = useState(false)
 
     return (
-        <div className="flex float-left">
-            <div className={`${open ? 'w-72' : 'w-20'} duration-300 h-screen bg-dark-purple relative`}>
+        <div className="flex float-left relative">
+            <div className={`${open ? 'w-72' : 'w-20'} duration-300 h-screen bg-dark-purple fixed`}>
                 <img src={require('../assets/control.png')} 
                 alt="sidebar_pic" 
                 className={`absolute cursor-pointer rounded-full -right-4
@@ -19,7 +19,7 @@ const Sidebar = () => {
                 onClick={() => setOpen(!open)} />   
                 <div className='flex gap-x-4 items-center'>
                     <h1 className={`text-white origin-left 
-                    font-semibold text-xl duration-300 px-20 pt-8 ${!open && 'scale-0'}`}>
+                    font-semibold text-2xl duration-300 px-20 pt-8 ${!open && 'scale-0'}`}>
                         PrayBook
                     </h1>
                 </div>

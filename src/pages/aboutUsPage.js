@@ -12,7 +12,7 @@ import Warning from '../components/Aboutuspage/Warning'
         details on the developer
 */
 
-function aboutUs () {
+function AboutUs () {
     return (
         <div className="flex flex-col justify-center items-center pb-8">
             <div className="p-14 w-full text-center">
@@ -26,4 +26,4 @@ function aboutUs () {
     )
 }
 
-export default aboutUs
+export default AboutUs

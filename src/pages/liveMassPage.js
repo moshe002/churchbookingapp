@@ -13,8 +13,7 @@ const GetData = () => {
     })
 }
 
-
-function liveMassPage () {
+function LiveMassPage () {
     return (
         <div className="flex justify-center items-center p-10">
             <h2 className="text-5xl font-semibold">Live Mass Recordings</h2>
@@ -27,4 +26,4 @@ function liveMassPage () {
     )
 }
 
-export default liveMassPage
+export default LiveMassPage

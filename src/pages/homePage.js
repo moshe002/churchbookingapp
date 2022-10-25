@@ -3,7 +3,7 @@ import Body from '../components/Homepage/BodyText'
 import Header from '../components/Homepage/HeaderText'
 
 
-function homePage () {
+function HomePage () {
     return (
     <>
         <Header />
@@ -15,4 +15,4 @@ function homePage () {
     )
 }
 
-export default homePage
+export default HomePage

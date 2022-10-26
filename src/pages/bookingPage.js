@@ -8,68 +8,50 @@ import { Dropdown } from "flowbite-react"
 
 import Wedding from '../components/Bookingpage/Wedding'
 import Baptismal from '../components/Bookingpage/Baptismal'
+import Thanksgiving from '../components/Bookingpage/Thanksgiving'
+import Forthedead from '../components/Bookingpage/Forthedead'
+import Fiesta from '../components/Bookingpage/Fiesta'
 
 function BookingPage () {
 
-    // const choices = ['Wedding', 'Baptismal', 'Thanksgiving Prayer', 'Prayer for the dead', 'Fiesta Mass']
-
-    const [show, setShow] = useState(false)
-    // const [selectedOption, setSelectedOption] = useState(null)
-
-    const wedding = () => {
-        console.log('wedding')
-        setShow(!show)
-    }
-
-    const baptismal = () => {
-        console.log('baptismal')
-        setShow(!show)
-    }
-
-    const thanksgiving = () => {
-        console.log('thanksgiving')
-        setShow(!show)
-    }
-
-    const prayerForTheDead = () => {
-        console.log('prayerForTheDead')
-        setShow(!show)
-    }
-
-    const fiesta = () => {
-        console.log('fiesta')
-        setShow(!show)
-    }
+    const [showOption, setShowOption] = useState()
 
     return (
         <div className="flex flex-col justify-center items-center p-10">
             <h2 className="text-5xl font-semibold">Booking Page</h2> 
             <div className="mt-20">
                 <Dropdown 
-                style={{ background: '#4D82DF', width: '30rem' }}
+                style={{ background: '#4D82DF' }}
                 size="lg"
                 label="Choose the type of Prayer or Event you want to book">
                     <div className='w-80 font-semibold'>
-                        <Dropdown.Item onClick={wedding}>
+                        <Dropdown.Item 
+                        onClick={() => setShowOption(<Wedding />)}>
                             Wedding
                         </Dropdown.Item>
-                        <Dropdown.Item onClick={baptismal}>
+                        <Dropdown.Item
+                        onClick={() => setShowOption(<Baptismal />)}>
                             Baptismal
                         </Dropdown.Item>
-                        <Dropdown.Item onClick={thanksgiving}>
+                        <Dropdown.Item
+                        onClick={() => setShowOption(<Thanksgiving />)}>
                             Thanksgiving Prayer
                         </Dropdown.Item>
-                        <Dropdown.Item onClick={prayerForTheDead}>
+                        <Dropdown.Item 
+                        onClick={() => setShowOption(<Forthedead />)}>
                             Prayer for the dead
                         </Dropdown.Item>
-                        <Dropdown.Item onClick={fiesta}>
+                        <Dropdown.Item
+                        onClick={() => setShowOption(<Fiesta />)}>
                             Fiesta Mass
                         </Dropdown.Item>
                     </div>
                 </Dropdown>
             </div>
-            <div className={`${show ? 'block' : 'hidden'}`}>
-                <Wedding />
+            <div className='mt-20'>
+                {
+                    showOption
+                }
             </div>
         </div>
     )

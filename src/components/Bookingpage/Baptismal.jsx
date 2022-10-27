@@ -14,7 +14,7 @@
 
 const Baptismal = () => {
     return (
-        <p>baptismal is pressed</p>
+        <h1 className="text-2xl font-semibold text-center">Baptismal Form</h1>
     )
 }
 

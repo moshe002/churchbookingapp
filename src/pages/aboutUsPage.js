@@ -16,7 +16,7 @@ function AboutUs () {
     return (
         <div className="flex flex-col justify-center items-center pb-8">
             <div className="p-14 w-full text-center">
-                <p className="text-5xl font-semibold">About Us:</p>
+                <p className="text-5xl font-semibold">About Us</p>
             </div>
             <Description />
             <Donate />

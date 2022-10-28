@@ -7,7 +7,7 @@
 
 const Thanksgiving = () => {
     return (
-        <p>thanksgiving is pressed</p>
+        <h1 className="text-2xl font-semibold text-center">Thanksgiving Form</h1>
     )
 }
 

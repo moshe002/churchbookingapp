@@ -1,16 +1,17 @@
 /*
     location of the event (asa ang pista)
+    location of chapel
+    Chapel devotee (kinsa ang gi devote sa chapel)
+    contact details of the sender (phone number of the sender)
+
     number of participants 
     name of sponsors
-    location of chapel
-    contact details of the sender (phone number of the sender)
     date and schedule (day and time)
-    Chapel devotee (kinsa ang gi devote sa chapel)
 */
 
 const Fiesta = () => {
     return (
-        <p>fiesta is pressed</p>
+        <h1 className="text-2xl font-semibold text-center">Fiesta Form</h1>
     )
 }
 

@@ -39,7 +39,7 @@ function BookingPage () {
                         </Dropdown.Item>
                         <Dropdown.Item 
                         onClick={() => setShowOption(<Forthedead />)}>
-                            Prayer for the dead
+                            Mass for the dead
                         </Dropdown.Item>
                         <Dropdown.Item
                         onClick={() => setShowOption(<Fiesta />)}>

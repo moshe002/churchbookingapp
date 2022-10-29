@@ -1,4 +1,3 @@
-
 /*
     page will have a drop down option to choose what to book
     (unsay ganahan ipa misa)    
@@ -25,7 +24,7 @@ function BookingPage () {
                 size="lg"
                 label="Choose the type of Prayer or Event you want to book">
                     <div className='w-80 font-semibold'>
-                        <Dropdown.Item 
+                        <Dropdown.Item
                         onClick={() => setShowOption(<Wedding />)}>
                             Wedding
                         </Dropdown.Item>

@@ -1,27 +1,31 @@
 /*
-    location of the event (asa ang pista)
-    location of chapel
-    Chapel devotee (kinsa ang gi devote sa chapel)
-    contact number of the sender (phone number of the sender)
+    complete name of the deceased
+    cause of death
+    age of the deceased 
+    home address of the deceased 
+    location on where to bury
 
     number of participants 
-    date and schedule (day and time)
+    contact details of the family (phone number)
+    date and schedule for the mass (day and time)
 */
-import React from 'react' 
+import React from 'react'
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import * as yup from 'yup'
 
 import SubmitButtonForm from '../../SubmitButtonForm'
 
-const FiestaForm = () => {
+const FtdForm = () => {
 
     const schema = yup.object().shape({
-        EventLocation: yup.string(),
-        ChapelLocation: yup.string(),
-        ChapelDevotee: yup.string(),
-        ContactNumber: yup.number().positive().integer(),
-        NumberOfParticipants: yup.number().positive().integer().min(1).max(99),
+        NameOfDeceased: yup.string(),
+        CauseOfDeath: yup.string(),
+        AgeOfDeceased: yup.number().positive().integer().max(99).min(1),
+        AddressOfDeceased: yup.string(),
+        BurialLocation: yup.string(),
+        NumberOfParticipants: yup.number().positive().integer().max(999).min(1),
+        FamilyContactNumber: yup.number().positive().integer(),
         ScheduleDay: yup.date(),
         ScheduleTime: yup.string()
     })
@@ -41,50 +45,66 @@ const FiestaForm = () => {
             <form onSubmit={handleSubmit(submit)}>
                 {/* ---------------------------------------- */}
                 <div className="form-divs">
-                    <h1 className="form-h1-divs">Event Details:</h1>
+                    <h1 className="form-h1-divs">Details of the Deceased:</h1>
                     <label>
-                        Location of the Event:
+                        Complete Name of the Deceased:
                         <input className="form-text" 
                         type="text" 
                         required 
-                        placeholder='Ex. Cebu City'
-                        {...register("EventLocation")}/>
+                        placeholder="Ex. Batman"
+                        {...register("NameOfDeceased")}/>
                     </label>
                     <label>
-                        Location of the Chapel:
+                        Cause of Death:
                         <input className="form-text" 
                         type="text" 
                         required 
-                        placeholder='Ex. near basketball court'
-                        {...register("ChapelLocation")}/>
+                        placeholder="Ex. broke up with gf"
+                        {...register("CauseOfDeath")}/>
                     </label>
                     <label>
-                        Chapel Devotee:
-                        <input className="form-text" 
-                        type="text" 
-                        required 
-                        placeholder='Ex. Mother Mary of Fatima'
-                        {...register("ChapelDevotee")}/>
-                    </label>
-                    <label>
-                        Contact Number:
-                        <input className="form-date-time-phoneNumber" 
+                        Age of the Deceased:
+                        <input className="form-smallNumber" 
                         type="number" 
                         required 
-                        placeholder='099 9999 9999'
-                        {...register("ContactNumber")}/>
+                        placeholder="Ex. 40yo"
+                        {...register("AgeOfDeceased")}/>
+                    </label>
+                    <label>
+                        Home Address of the Deceased:
+                        <input className="form-text" 
+                        type="text" 
+                        required 
+                        placeholder="Ex. didto sa"
+                        {...register("AddressOfDeceased")}/>
+                    </label>
+                    <label>
+                        Location on where to bury:
+                        <input className="form-text" 
+                        type="text" 
+                        required 
+                        placeholder="Ex. didto sa"
+                        {...register("BurialLocation")}/>
                     </label>
                 </div>
                 {/* ---------------------------------------- */}
                 <div className="form-divs">
                     <h1 className="form-h1-divs">Other Details:</h1>
                     <label>
-                        Number of Participants:
+                        Number of participants:
                         <input className="form-smallNumber" 
                         type="text" 
                         required 
-                        placeholder='Ex. 50'
+                        placeholder="Ex. 50"
                         {...register("NumberOfParticipants")}/>
+                    </label>
+                    <label>
+                        Contact Number of the Family:
+                        <input className="form-date-time-phoneNumber" 
+                        type="number" 
+                        required 
+                        placeholder="Ex. 0912 345 6789"
+                        {...register("FamilyContactNumber")}/>
                     </label>
                     <label>
                         Schedule (Day):
@@ -96,7 +116,7 @@ const FiestaForm = () => {
                     <label>
                         Schedule (Time):
                         <input className="form-date-time-phoneNumber" 
-                        type="time"
+                        type="time" 
                         required 
                         {...register("ScheduleTime")}/>
                     </label>
@@ -107,4 +127,4 @@ const FiestaForm = () => {
     )
 }
 
-export default FiestaForm
+export default FtdForm

@@ -3,6 +3,8 @@ import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import * as yup from 'yup'
 
+import SubmitButtonForm from '../../SubmitButtonForm'
+
 const BaptismalForm = () => {
 
      // used for validation
@@ -40,7 +42,7 @@ const BaptismalForm = () => {
                         Complete Name of the Child:
                         <input className="w-60 ml-2" 
                         type="text" required 
-                        placeholder="Jon Something Something"
+                        placeholder="Ex. Jon Something Something"
                         {...register("NameOfChild")}/>
                     </label>
                     <label>
@@ -99,7 +101,7 @@ const BaptismalForm = () => {
                         <input className="w-40 ml-2" 
                         type="number" 
                         required 
-                        placeholder="099 9999 9999" 
+                        placeholder="0999 999 9999" 
                         {...register("ContactNumberOfParents")}/>
                     </label>
                 </div>
@@ -129,10 +131,7 @@ const BaptismalForm = () => {
                         {...register("ScheduleTime")}/>
                     </label>
                 </div>
-                <input 
-                className="hover:cursor-pointer hover:bg-blue-500 bg-blue-400 text-white p-5 w-40 rounded-lg text-lg font-semibold duration-200" 
-                type="submit" 
-                placeholder="Submit"/>
+                <SubmitButtonForm /> 
             </form>
         </div>
     )

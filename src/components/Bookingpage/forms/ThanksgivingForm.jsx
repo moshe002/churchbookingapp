@@ -9,6 +9,8 @@ import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import * as yup from 'yup'
 
+import SubmitButtonForm from '../../SubmitButtonForm'
+
 const ThanksgivingForm = () => {
 
     const schema = yup.object().shape({
@@ -66,10 +68,7 @@ const ThanksgivingForm = () => {
                         {...register("ContactNumber")}/>
                     </label>
                 </div>
-                <input 
-                className="form-submit-btn" 
-                type="submit" 
-                placeholder="Submit"/>
+                <SubmitButtonForm />
             </form>
         </div>
     )

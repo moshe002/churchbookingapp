@@ -8,10 +8,15 @@
     name of sponsors
     date and schedule (day and time)
 */
+import React from 'react'
+import FiestaForm from './forms/FiestaForm'
 
 const Fiesta = () => {
     return (
-        <h1 className="text-2xl font-semibold text-center">Fiesta Form</h1>
+        <>
+            <h1 className="text-2xl font-semibold text-center">Fiesta Form</h1>
+            <FiestaForm />
+        </>
     )
 }
 

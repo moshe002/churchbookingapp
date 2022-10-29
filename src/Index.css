@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .form-container {
+    @apply ml-16 p-10 text-center;
+  }
+
+  .form-divs {
+    @apply grid grid-cols-3 gap-4 border-2 p-10 mb-5;
+  }
+
+  .form-h1-divs {
+    @apply text-lg font-semibold text-center pb-10;
+  }
+
+  .form-text {
+    @apply w-60 ml-2;
+  }
+
+  .form-smallNumber {
+    @apply w-28 ml-2;
+  }
+
+  .form-date-time-phoneNumber {
+    @apply w-40 ml-2;
+  }
+
+  .form-submit-btn {
+    @apply hover:cursor-pointer hover:bg-blue-500 bg-blue-400 text-white p-5 w-40 rounded-lg text-lg font-semibold duration-200;
+  }
+}
+
+.App {
+  text-align: center;
+}
+

@@ -11,8 +11,10 @@ import React from 'react'
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import * as yup from 'yup'
+import { collection, addDoc } from 'firebase/firestore'
 
 import SubmitButtonForm from '../../SubmitButtonForm'
+import { db } from '../../../firebase/firebase'
 
 const FiestaForm = () => {
 
@@ -21,8 +23,8 @@ const FiestaForm = () => {
         ChapelLocation: yup.string(),
         ChapelDevotee: yup.string(),
         ContactNumber: yup.number().positive().integer(),
-        NumberOfParticipants: yup.number().positive().integer().min(1).max(99),
-        ScheduleDay: yup.date(),
+        NumberOfParticipants: yup.number().positive().integer().min(1).max(999),
+        ScheduleDay: yup.string(),
         ScheduleTime: yup.string()
     })
 
@@ -32,8 +34,11 @@ const FiestaForm = () => {
         resolver: yupResolver(schema),
     })
 
-    const submit = (data) => {
-        console.log(data)
+    const userCollectionRef = collection(db, "fiesta")
+
+    const submit = async (data) => {
+        await addDoc(userCollectionRef, data)
+        alert("Form has been submitted, thank you!")
     }
 
     return(

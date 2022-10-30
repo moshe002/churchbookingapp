@@ -13,20 +13,22 @@ import React from 'react'
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import * as yup from 'yup'
+import { collection, addDoc } from 'firebase/firestore'
 
 import SubmitButtonForm from '../../SubmitButtonForm'
+import { db } from '../../../firebase/firebase'
 
 const FtdForm = () => {
 
     const schema = yup.object().shape({
         NameOfDeceased: yup.string(),
         CauseOfDeath: yup.string(),
-        AgeOfDeceased: yup.number().positive().integer().max(99).min(1),
+        AgeOfDeceased: yup.number().positive().integer().max(999).min(1),
         AddressOfDeceased: yup.string(),
         BurialLocation: yup.string(),
         NumberOfParticipants: yup.number().positive().integer().max(999).min(1),
         FamilyContactNumber: yup.number().positive().integer(),
-        ScheduleDay: yup.date(),
+        ScheduleDay: yup.string(),
         ScheduleTime: yup.string()
     })
 
@@ -36,8 +38,11 @@ const FtdForm = () => {
         resolver: yupResolver(schema),
     })
 
-    const submit = (data) => {
-        console.log(data)
+    const userCollectionRef = collection(db, "forthedead")
+
+    const submit = async (data) => {
+        await addDoc(userCollectionRef, data)
+        alert("Form has been submitted, thank you!")
     }
 
     return(

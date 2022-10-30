@@ -8,8 +8,10 @@ import React from 'react'
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import * as yup from 'yup'
+import { collection, addDoc } from 'firebase/firestore'
 
 import SubmitButtonForm from '../../SubmitButtonForm'
+import { db } from '../../../firebase/firebase'
 
 const ThanksgivingForm = () => {
 
@@ -26,8 +28,11 @@ const ThanksgivingForm = () => {
         resolver: yupResolver(schema),
     })
 
-    const submit = (data) => {
-        console.log(data)
+    const userCollectionRef = collection(db, "thanksgiving")
+
+    const submit = async (data) => {
+        await addDoc(userCollectionRef, data)
+        alert("Form has been submitted, thank you!")
     }
 
     return(

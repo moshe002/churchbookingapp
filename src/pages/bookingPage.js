@@ -17,13 +17,13 @@ function BookingPage () {
 
     return (
         <div className="flex flex-col justify-center items-center p-10">
-            <h2 className="text-5xl font-semibold">Booking Page</h2> 
-            <div className="mt-20">
+            <h2 className="pl-7 sm:pl-0 text-2xl sm:text-5xl font-semibold">Booking Page</h2> 
+            <div className="pl-10 sm:pl-0 mt-20">
                 <Dropdown 
                 style={{ background: '#4D82DF' }}
                 size="lg"
                 label="Choose the type of Prayer or Event you want to book">
-                    <div className='w-80 font-semibold'>
+                    <div className='w-40 sm:w-80 font-semibold'>
                         <Dropdown.Item
                         onClick={() => setShowOption(<Wedding />)}>
                             Wedding

@@ -38,10 +38,10 @@ const BaptismalForm = () => {
     }
 
     return (
-        <div className="ml-16 p-10 text-center">
+        <div className="flex flex-col ml-0 md:ml-16 p-0 md:p-10 text-center">
             <form onSubmit={handleSubmit(submit)}>
                 {/* ---------------------------------------- */}
-                <div className="grid grid-cols-3 gap-4 border-2 p-10 mb-5">
+                <div className="flex flex-col md:grid md:grid-cols-3 gap-4 md:border-2 pl-14 py-10 md:p-10 mb-5">
                     <h1 className="text-lg font-semibold text-center pb-10">Child Details:</h1>
                     <label>
                         Complete Name of the Child:
@@ -75,7 +75,7 @@ const BaptismalForm = () => {
                     </label>
                 </div>
                 {/* ---------------------------------------- */}
-                <div className="grid grid-cols-3 gap-4 border-2 p-10 mb-5">
+                <div className="flex flex-col md:grid md:grid-cols-3 gap-4 md:border-2 pl-14 py-10 md:p-10 mb-5">
                     <h1 className="text-lg font-semibold text-center pb-10">Details of the Parents:</h1>
                     <label>
                         Name of Father:
@@ -111,7 +111,7 @@ const BaptismalForm = () => {
                     </label>
                 </div>
                 {/* ---------------------------------------- */}
-                <div className="grid grid-cols-3 gap-4 border-2 p-10 mb-5">
+                <div className="flex flex-col md:grid md:grid-cols-3 gap-4 md:border-2 pl-14 py-10 md:p-10 mb-5">
                     <h1 className="text-lg font-semibold text-center pb-10">Other Details:</h1>
                     <label>
                         Number of Participants:

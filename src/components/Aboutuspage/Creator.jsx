@@ -1,13 +1,13 @@
 const Creator = () => {
     return (
-        <div className="flex flex-col justify-center items-center text-center w-full mt-14 p-10 gap-5 text-lg border-b-4">
+        <div className="flex flex-col justify-center items-center text-center w-full mt-6 sm:mt-14 pl-7 sm:pl-0 py-10 gap-5 border-b-4">
             <img 
-            className="text-center w-52 h-52 rounded-full border-4 border-black"
+            className="text-center w-32 h-32 sm:w-52 sm:h-52 rounded-full border-4 border-black"
             alt="developer_pic" src={require("../../assets/formal2.jpg")}/>
-            <p><b>Creator:</b> Moses Anthony Y. Fat</p>
-            <p><b>Email:</b> mosesfat@gmail.com</p>
-            <p><b>Contact me through:</b></p>
-            <div className="flex flex-row gap-5 justify-center items-center">
+            <p className="text-sm sm:text-lg"><b>Creator:</b> Moses Anthony Y. Fat</p>
+            <p className="text-sm sm:text-lg"><b>Email:</b> mosesfat@gmail.com</p>
+            <p className="text-sm sm:text-lg"><b>Contact me through:</b></p>
+            <div className="flex flex-row gap-5 justify-center text-base sm:text-lg items-center">
                 <a 
                 className="hover:text-blue-500 hover:underline underline-offset-4" 
                 href="https://www.facebook.com/mosesanthony873/" target='_blank' rel="noreferrer">Facebook</a>

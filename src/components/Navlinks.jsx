@@ -2,10 +2,10 @@ import { Link } from 'react-router-dom'
 
 export const Navlinks = (props) => {
     return (
-        <div className='flex flex-col gap-10 mt-20
+        <div className='flex flex-col gap-10 mt-40 sm:mt-20
          text-white pl-10 text-xl'>
             <div className='flex flex-row'>
-                <div className={`h-11 pt-4 ${props.open ? 'pr-5' : '-ml-3'} border-b-0 ${props.open ? 'hover:border-b-0' : 'hover:border-b-2'} duration-150`}> 
+                <div className={`h-11 pt-4 ${props.open ? 'pr-5' : '-ml-5 sm:-ml-3'} border-b-0 ${props.open ? 'hover:border-b-0' : 'hover:border-b-2'} duration-150`}> 
                     <a 
                     title='Home Page'
                     href={`${!props.open && '/'}`} 
@@ -15,12 +15,12 @@ export const Navlinks = (props) => {
                         </svg>
                     </a>  
                 </div>
-                <div className={` hover:bg-slate-400 p-3 w-32 text-center rounded-md duration-200 ${!props.open && 'scale-0'}`}>
+                <div className={` hover:bg-slate-400 p-3 w-32 text-center text-base sm:text-xl rounded-md duration-200 ${!props.open && 'scale-0'}`}>
                     <Link to='/' title='Home Page'> Home </Link>
                 </div>
             </div>
             <div className='flex flex-row'>
-                <div className={`h-11 pt-4 ${props.open ? 'pr-5' : '-ml-3'} border-b-0 ${props.open ? 'hover:border-b-0' : 'hover:border-b-2'} duration-150`}>
+                <div className={`h-11 pt-4 ${props.open ? 'pr-5' : '-ml-5 sm:-ml-3'} border-b-0 ${props.open ? 'hover:border-b-0' : 'hover:border-b-2'} duration-150`}>
                     <a 
                     title='Booking Page'
                     href={`${!props.open && '/booking'}`} 
@@ -30,12 +30,12 @@ export const Navlinks = (props) => {
                         </svg>
                     </a>
                 </div>
-                <div className={` hover:bg-slate-400 p-3 w-32 text-center rounded-md duration-200 ${!props.open && 'scale-0'}`}>
+                <div className={` hover:bg-slate-400 p-3 w-32 text-center text-base sm:text-xl rounded-md duration-200 ${!props.open && 'scale-0'}`}>
                     <Link to='/booking' title='Booking Page'> Book </Link>
                 </div>
             </div>
             <div className='flex flex-row'>
-                <div className={`h-11 pt-4 ${props.open ? 'pr-5' : '-ml-3'} border-b-0 ${props.open ? 'hover:border-b-0' : 'hover:border-b-2'} duration-150`}>
+                <div className={`h-11 pt-4 ${props.open ? 'pr-5' : '-ml-5 sm:-ml-3'} border-b-0 ${props.open ? 'hover:border-b-0' : 'hover:border-b-2'} duration-150`}>
                     <a 
                     title='Live Mass Page'
                     href={`${!props.open && '/live'}`} 
@@ -45,12 +45,12 @@ export const Navlinks = (props) => {
                         </svg>
                     </a>
                 </div>
-                <div className={` hover:bg-slate-400 p-3 w-32 text-center rounded-md duration-200 ${!props.open && 'scale-0'}`}>
+                <div className={` hover:bg-slate-400 p-3 w-32 text-center text-base sm:text-xl rounded-md duration-200 ${!props.open && 'scale-0'}`}>
                     <Link to='/live' title='Live Mass Page'> Live Mass </Link>
                 </div>
             </div>
             <div className='flex flex-row'>
-                <div className={`h-11 pt-4 ${props.open ? 'pr-5' : '-ml-3'} border-b-0 ${props.open ? 'hover:border-b-0' : 'hover:border-b-2'} duration-150`}>
+                <div className={`h-11 pt-4 ${props.open ? 'pr-5' : '-ml-5 sm:-ml-3'} border-b-0 ${props.open ? 'hover:border-b-0' : 'hover:border-b-2'} duration-150`}>
                     <a 
                     title='About Us Page'
                     href={`${!props.open && '/about'}`} 
@@ -60,7 +60,7 @@ export const Navlinks = (props) => {
                         </svg>
                     </a>
                 </div>
-                <div className={` hover:bg-slate-400 p-3 w-32 text-center rounded-md duration-200 ${!props.open && 'scale-0'}`}>
+                <div className={` hover:bg-slate-400 p-3 w-32 text-center text-base sm:text-xl rounded-md duration-200 ${!props.open && 'scale-0'}`}>
                     <Link to='/about' title='About Us Page'> About Us </Link>
                 </div>
             </div>

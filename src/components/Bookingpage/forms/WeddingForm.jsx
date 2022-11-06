@@ -51,10 +51,10 @@ const WeddingForm = () => {
     }
 
     return (
-        <div className="ml-16 p-10 text-center">
+        <div className="flex flex-col ml-0 md:ml-16 p-0 md:p-10 text-center">
             <form onSubmit={handleSubmit(submit)}>
                 {/* ---------------------------------------- */}
-                <div className="grid grid-cols-3 gap-4 border-2 p-10 mb-5">
+                <div className="flex flex-col md:grid md:grid-cols-3 gap-4 md:border-2 pl-14 py-10 md:p-10 mb-5">
                     <h1 className="text-lg font-semibold text-center pb-10">Details of the Newly Weds:</h1>
                     <label>
                         Complete Name of Groom:
@@ -106,7 +106,7 @@ const WeddingForm = () => {
                     </label>
                 </div>
                 {/* ---------------------------------------- */}
-                <div className="grid grid-cols-3 gap-4 border-2 p-10 mb-5">
+                <div className="flex flex-col md:grid md:grid-cols-3 gap-4 md:border-2 pl-14 py-10 md:p-10 mb-5">
                     <h1 className="text-lg font-semibold text-center pb-10">Parent's Name of the Bride and Groom:</h1>
                     <label>
                         Mother's Name of Bride:
@@ -158,7 +158,7 @@ const WeddingForm = () => {
                     </label>
                 </div>
                 {/* ---------------------------------------- */}
-                <div className="grid grid-cols-3 gap-4 border-2 p-10 mb-5">
+                <div className="flex flex-col md:grid md:grid-cols-3 gap-4 md:border-2 pl-14 py-10 md:p-10 mb-5">
                     <h1 className="text-lg font-semibold text-center pb-10">Readers and Bearers:</h1>
                     <label>
                         Reader of the First Reading:
@@ -218,7 +218,7 @@ const WeddingForm = () => {
                     </label>
                 </div>
                 {/* ---------------------------------------- */}
-                <div className="grid grid-cols-3 gap-4 border-2 p-10 mb-5">
+                <div className="flex flex-col md:grid md:grid-cols-3 gap-4 md:border-2 pl-14 py-10 md:p-10 mb-5">
                     <h1 className="text-lg font-semibold text-center pb-10">Details on the event:</h1>
                     <label>
                         Schedule (Day):

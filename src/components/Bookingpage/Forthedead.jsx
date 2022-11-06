@@ -15,7 +15,7 @@ import FtdForm from './forms/FtdForm'
 const Forthedead = () => {
     return (
         <>
-            <h1 className="text-2xl font-semibold text-center">Mass for the Dead Form</h1>
+            <h1 className="text-2xl font-semibold text-center pl-12 md:pl-3">Mass for the Dead Form</h1>
             <FtdForm />
         </>
     )

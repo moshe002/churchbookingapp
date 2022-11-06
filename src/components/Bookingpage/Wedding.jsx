@@ -20,10 +20,10 @@ import WeddingForm from "./forms/WeddingForm"
 
 const Wedding = () => {
     return (
-        <> {/* form will use react-hook-form (form not yet complete) */}
-            <h1 className="text-2xl font-semibold text-center">Wedding Form</h1>
+        <div className='flex flex-col'> {/* form will use react-hook-form (form not yet complete) */}
+            <h1 className="text-2xl font-semibold text-center pl-7 md:pl-3">Wedding Form</h1>
             <WeddingForm />
-        </>
+        </div>
     )
 }
 

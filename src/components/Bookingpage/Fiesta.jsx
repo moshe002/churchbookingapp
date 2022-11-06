@@ -14,7 +14,7 @@ import FiestaForm from './forms/FiestaForm'
 const Fiesta = () => {
     return (
         <>
-            <h1 className="text-2xl font-semibold text-center">Fiesta Form</h1>
+            <h1 className="text-2xl font-semibold text-center pl-7 md:pl-3">Fiesta Form</h1>
             <FiestaForm />
         </>
     )

@@ -10,7 +10,7 @@ import ThanksgivingForm from './forms/ThanksgivingForm'
 const Thanksgiving = () => {
     return (
         <>
-            <h1 className="text-2xl font-semibold text-center">Thanksgiving Form</h1>
+            <h1 className="text-2xl font-semibold text-center pl-7 md:pl-3">Thanksgiving Form</h1>
             <ThanksgivingForm />
         </>
     )

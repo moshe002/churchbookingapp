@@ -10,7 +10,7 @@ function LiveMassPage () {
     }, [])
     
     const getVideos = () => {
-        fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCKUsvn9QGIwiX8fjCNmetWA&maxResults=3&q=live%20mass&key=AIzaSyDWV26jvrvKzoLMky6RLHJS8xELSvONIj8`)
+        fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCKUsvn9QGIwiX8fjCNmetWA&maxResults=2&q=live%20mass&key=AIzaSyDWV26jvrvKzoLMky6RLHJS8xELSvONIj8`)
         .then((res) => res.json())
         .then((data) => {
             console.log(data.items)
@@ -22,7 +22,7 @@ function LiveMassPage () {
     return (
         <div className="flex flex-col justify-center items-center p-10">
             <h2 className="text-2xl sm:text-5xl font-semibold">Live Mass Recordings</h2>
-            <div className='flex p-10'>
+            <div className='flex flex-col p-10 mt-10'>
                 <ul>
                     {
                         video.map((item) => {
@@ -32,12 +32,10 @@ function LiveMassPage () {
                             const { medium = {} } = thumbnails
                             const { videoId } = id
                             return(
-                                <li key={Math.random()}>
-                                    <a href={`https://www.youtube.com/watch?v=${videoId}`} target='_blank' rel="noreferrer">
-                                        <p>
-                                            <img width={medium.width} height={medium.height} src={medium.url} alt="pic" />
-                                        </p>
-                                        <h3>{ title }</h3>
+                                <li key={Math.random()} className='mb-14' >
+                                    <a href={`https://www.youtube.com/watch?v=${videoId}`} target='_blank' rel="noreferrer">                         
+                                        <img className='block m-auto rounded-lg border-4 hover:border-blue-500 duration-300' width={medium.width} height={medium.height} src={medium.url} alt="pic" />
+                                        <h3 className='mt-5 text-center text-lg font-semibold'>{ title }</h3>
                                     </a>
                                 </li>
                             ) 

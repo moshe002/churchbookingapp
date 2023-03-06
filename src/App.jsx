@@ -13,4 +13,7 @@ function App() {
   );
 }
 
+// npm start (app migrated to vite from cra (Create React App))
+// do ctrl + q to end process and development
+
 export default App;

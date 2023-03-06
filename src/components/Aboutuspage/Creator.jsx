@@ -1,9 +1,11 @@
+import formalPic from "../../assets/formal2.jpg";
+
 const Creator = () => {
     return (
         <div className="flex flex-col justify-center items-center text-center w-full mt-6 sm:mt-14 pl-7 sm:pl-0 py-10 gap-5 border-b-4">
             <img 
             className="text-center w-32 h-32 sm:w-52 sm:h-52 rounded-full border-4 border-black"
-            alt="developer_pic" src={require("../../assets/formal2.jpg")}/>
+            alt="developer_pic" src={formalPic}/>
             <p className="text-sm sm:text-lg"><b>Creator:</b> Moses Anthony Y. Fat</p>
             <p className="text-sm sm:text-lg"><b>Email:</b> mosesfat@gmail.com</p>
             <p className="text-sm sm:text-lg"><b>Contact me through:</b></p>

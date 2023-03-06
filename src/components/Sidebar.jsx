@@ -5,6 +5,8 @@ import { Navlinks } from '../components/Navlinks'
 
 //  import Routing from '../routes/routes'
 
+import control from '../assets/control.png';
+
 const Sidebar = () => {
 
     const [open, setOpen] = useState(false)
@@ -30,7 +32,7 @@ const Sidebar = () => {
             <div 
             ref={menuRef}
             className={`${open ? 'w-56 sm:w-72' : 'w-16 sm:w-20'} duration-300 h-screen bg-dark-purple fixed`}>
-                <img src={require('../assets/control.png')} 
+                <img src={control} 
                 alt="sidebar_pic" 
                 className={`absolute cursor-pointer rounded-full -right-4
                 top-9 w-10 border-2 border-dark-purple ${!open && 'rotate-180'}`}

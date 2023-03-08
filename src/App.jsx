@@ -1,15 +1,23 @@
 import './Index.css';
 
-import Routing from './routes/routes'
+import Homepage from './pages/homePage';
+import Bookingpage from './pages/bookingPage';
+import Masspage from './pages/liveMassPage';
+import AboutUspage from './pages/aboutUsPage';
+
+//import Routing from './routes/routes'
 
 // PrayBook - A church prayer booking app
 // for scripts Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process
 
 function App() {
   return ( 
-    <div>
-      <Routing />
-    </div>
+    <>
+      <Homepage />
+      <Bookingpage />
+      <Masspage />
+      <AboutUspage />
+    </>
   );
 }
 

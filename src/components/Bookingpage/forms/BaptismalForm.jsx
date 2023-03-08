@@ -38,28 +38,28 @@ const BaptismalForm = () => {
     }
 
     return (
-        <div className="flex flex-col ml-0 md:ml-16 p-0 md:p-10 text-center">
+        <div className="flex flex-col p-0 md:p-10 text-center">
             <form onSubmit={handleSubmit(submit)}>
                 {/* ---------------------------------------- */}
-                <div className="flex flex-col md:grid md:grid-cols-3 gap-4 md:border-2 pl-14 py-10 md:p-10 mb-5">
+                <div className="flex flex-col md:grid md:grid-cols-3 gap-4 md:border-2 py-10 md:p-10 mb-5">
                     <h1 className="text-lg font-semibold text-center pb-10">Child Details:</h1>
                     <label>
                         Complete Name of the Child:
-                        <input className="w-60 ml-2" 
+                        <input className="w-60" 
                         type="text" required 
                         placeholder="Ex. Jon Something Something"
                         {...register("NameOfChild")}/>
                     </label>
                     <label>
                         Birthdate of Child:
-                        <input className="w-40 ml-2" 
+                        <input className="w-40" 
                         type="date" 
                         required
                         {...register("BirthdateOfChild")}/>
                     </label>
                     <label>
                         Birthplace of Child:
-                        <input className="w-60 ml-2" 
+                        <input className="w-60" 
                         type="text" 
                         required 
                         placeholder="Ex. Cebu City"
@@ -67,7 +67,7 @@ const BaptismalForm = () => {
                     </label>
                     <label>
                         Age of Child:
-                        <input className="w-28 ml-2" 
+                        <input className="w-28" 
                         type="text" 
                         required 
                         placeholder="Ex. 2 months or 2 yo"
@@ -75,11 +75,11 @@ const BaptismalForm = () => {
                     </label>
                 </div>
                 {/* ---------------------------------------- */}
-                <div className="flex flex-col md:grid md:grid-cols-3 gap-4 md:border-2 pl-14 py-10 md:p-10 mb-5">
+                <div className="flex flex-col md:grid md:grid-cols-3 gap-4 md:border-2 py-10 md:p-10 mb-5">
                     <h1 className="text-lg font-semibold text-center pb-10">Details of the Parents:</h1>
                     <label>
                         Name of Father:
-                        <input className="w-60 ml-2" 
+                        <input className="w-60" 
                         type="text" 
                         required 
                         placeholder="Ex. John Cena"
@@ -87,7 +87,7 @@ const BaptismalForm = () => {
                     </label>
                     <label>
                         Name of Mother:
-                        <input className="w-60 ml-2" 
+                        <input className="w-60" 
                         type="text" 
                         required 
                         placeholder="Ex. Jenna Cena"
@@ -95,7 +95,7 @@ const BaptismalForm = () => {
                     </label>
                     <label>
                         Complete Home Address of the Parents:
-                        <input className="w-60 ml-2" 
+                        <input className="w-60" 
                         type="text" 
                         required 
                         placeholder="Ex. Didto sa kuan"
@@ -103,7 +103,7 @@ const BaptismalForm = () => {
                     </label>
                     <label>
                         Contact Number of the Parents:
-                        <input className="w-40 ml-2" 
+                        <input className="w-40" 
                         type="number" 
                         required 
                         placeholder="0999 999 9999" 
@@ -111,11 +111,11 @@ const BaptismalForm = () => {
                     </label>
                 </div>
                 {/* ---------------------------------------- */}
-                <div className="flex flex-col md:grid md:grid-cols-3 gap-4 md:border-2 pl-14 py-10 md:p-10 mb-5">
+                <div className="flex flex-col md:grid md:grid-cols-3 gap-4 md:border-2 py-10 md:p-10 mb-5">
                     <h1 className="text-lg font-semibold text-center pb-10">Other Details:</h1>
                     <label>
                         Number of Participants:
-                        <input className="w-40 ml-2" 
+                        <input className="w-40" 
                         type="number" 
                         required 
                         placeholder="Ex. 50"
@@ -123,14 +123,14 @@ const BaptismalForm = () => {
                     </label>
                     <label>
                         Schedule (Day):
-                        <input className="w-40 ml-2" 
+                        <input className="w-40" 
                         type="date" 
                         required
                         {...register("ScheduleDay")}/>
                     </label>
                     <label>
                         Schedule (Time):
-                        <input className="w-40 ml-2" 
+                        <input className="w-40" 
                         type="time" 
                         required
                         {...register("ScheduleTime")}/>

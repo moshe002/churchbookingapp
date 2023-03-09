@@ -43,7 +43,7 @@ const Creator = () => {
                 </div>
             </div>
         </div>
-    )
+    ) 
 }
 
 export default Creator

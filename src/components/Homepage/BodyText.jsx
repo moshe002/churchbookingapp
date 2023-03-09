@@ -1,6 +1,6 @@
 const BodyText = () => {
     return (
-        <div className="flex flex-col w-full justify-center items-center text-center mt-10 p-10 border-t-4 border-b-4">
+        <div className="flex flex-col w-full justify-center items-center text-center p-10">
             <p className="w-3/5 text-center text-sm sm:text-lg">
                 <b>PrayBook</b> is a <i>church booking application</i>, where you 
                 can book yourself personal prayers with a priest, 

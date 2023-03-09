@@ -1,13 +1,12 @@
-import Body from '../components/Homepage/BodyText'
-import Header from '../components/Homepage/HeaderText'
-
+import Body from '../components/Homepage/BodyText';
+import Slider from '../components/Homepage/Slider';
 
 function HomePage () {
     return (
-    <div>
-        <Header />
-        <div className="flex flex-col justify-center items-center pt-14 pb-14">
+    <div className='border-t-4 border-b-4'>
+        <div className="flex flex-col justify-center items-center pb-14">
             <Body />
+            <Slider />
         </div>
     </div>
     )

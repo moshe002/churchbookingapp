@@ -13,6 +13,9 @@ module.exports = {
       backgroundImage: {
         'home-header-bg': "url('./assets/church bg.jpg')",
       },
+      boxShadow: {
+        '3xl': '0 10px 65px -15px rgba(0, 0, 0)',
+      },
     },
   },
   plugins: [

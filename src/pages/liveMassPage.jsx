@@ -20,7 +20,7 @@ function LiveMassPage () {
     }
 
     return (
-        <div className="flex flex-col justify-center items-center p-10">
+        <div className="flex flex-col justify-center items-center p-10 border-b-4 border-t-4">
             <h2 className="text-center ml-12 sm:ml-0 text-2xl sm:text-5xl font-semibold">Live Mass Recordings</h2>
             <div className='flex flex-col p-10 mt-10 ml-10 sm:ml-0'>
                 <ul>
@@ -34,8 +34,8 @@ function LiveMassPage () {
                             return(
                                 <li key={Math.random()} className='mb-14' >
                                     <a href={`https://www.youtube.com/watch?v=${videoId}`} target='_blank' rel="noreferrer">                         
-                                        <img className='block m-auto rounded-lg border-4 hover:border-blue-500 duration-300' width={medium.width} height={medium.height} src={medium.url} alt="pic" />
-                                        <h3 className='mt-5 text-center text-lg font-semibold'>{ title }</h3>
+                                        <img className='block m-auto rounded-lg border-4 hover:border-blue-500 duration-150' width={medium.width} height={medium.height} src={medium.url} alt="pic" />
+                                        <h3 className='mt-5 text-center text-lg font-semibold underline'>{ title }</h3>
                                     </a>
                                 </li>
                             ) 

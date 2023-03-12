@@ -1,6 +1,6 @@
 const Donate = () => {
     return (
-        <div className="mt-14 w-full text-center pl-7 sm:pl-5 py-10 border-t-4 border-b-4">
+        <div className="mt-14 w-full text-center pl-7 sm:pl-5 py-10">
             <p className="text-xl sm:text-4xl font-semibold">Donate to charity:</p>
             <div className="mt-10">
                 <div className="font-semibold text-lg">

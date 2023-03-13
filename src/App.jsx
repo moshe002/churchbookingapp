@@ -18,7 +18,6 @@ function App() {
       <Header />
       <Homepage />
       <Bookingpage />
-      <Masspage />
       <AboutUspage />
     </>
   );

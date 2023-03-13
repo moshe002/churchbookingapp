@@ -20,6 +20,6 @@ const BodyText = () => {
             </p>
         </div>
     )
-}
+};
 
 export default BodyText

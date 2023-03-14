@@ -41,10 +41,11 @@ const BaptismalForm = () => {
         <div className="flex flex-col p-0 md:p-10 text-center">
             <form onSubmit={handleSubmit(submit)}>
                 {/* ---------------------------------------- */}
-                <div className="flex flex-col md:grid md:grid-cols-3 gap-4 md:border-2 py-10 md:p-10 mb-5">
+                <div className="flex flex-col justify-start gap-4 md:border-2 py-10 md:p-10 mb-5">
                     <h1 className="text-lg font-semibold text-center pb-10">Child Details:</h1>
                     <label>
                         Complete Name of the Child:
+                        <br/>
                         <input className="w-60" 
                         type="text" required 
                         placeholder="Ex. Jon Something Something"

@@ -51,80 +51,89 @@ const FtdForm = () => {
                 {/* ---------------------------------------- */}
                 <div className="form-divs">
                     <h1 className="form-h1-divs">Details of the Deceased:</h1>
-                    <label>
+                    <label htmlFor='NameOfDeceased' className='flex justify-start font-semibold' >
                         Complete Name of the Deceased:
-                        <input className="form-text" 
+                    </label>
+                    <input className="form-text" 
                         type="text" 
                         required 
+                        id='NameOfDeceased'
                         placeholder="Ex. Batman"
                         {...register("NameOfDeceased")}/>
-                    </label>
-                    <label>
+                    <label htmlFor='CauseOfDeath' className='flex justify-start font-semibold' >
                         Cause of Death:
-                        <input className="form-text" 
+                    </label>
+                    <input className="form-text" 
                         type="text" 
                         required 
+                        id='CauseOfDeath'
                         placeholder="Ex. broke up with gf"
                         {...register("CauseOfDeath")}/>
-                    </label>
-                    <label>
+                    <label htmlFor='AgeOfDeceased' className='flex justify-start font-semibold' >
                         Age of the Deceased:
-                        <input className="form-smallNumber" 
+                    </label>
+                    <input className="form-smallNumber" 
                         type="number" 
                         required 
+                        id='AgeOfDeceased'
                         placeholder="Ex. 40yo"
                         {...register("AgeOfDeceased")}/>
-                    </label>
-                    <label>
+                    <label htmlFor='AddressOfDeceased' className='flex justify-start font-semibold' >
                         Home Address of the Deceased:
-                        <input className="form-text" 
+                    </label>
+                    <input className="form-text" 
                         type="text" 
+                        id='AddressOfDeceased'
                         required 
                         placeholder="Ex. didto sa"
                         {...register("AddressOfDeceased")}/>
-                    </label>
-                    <label>
+                    <label htmlFor='BurialLocation' className='flex justify-start font-semibold' >
                         Location on where to bury:
-                        <input className="form-text" 
+                    </label>
+                    <input className="form-text" 
                         type="text" 
                         required 
+                        id='BurialLocation'
                         placeholder="Ex. didto sa"
                         {...register("BurialLocation")}/>
-                    </label>
                 </div>
                 {/* ---------------------------------------- */}
                 <div className="form-divs">
                     <h1 className="form-h1-divs">Other Details:</h1>
-                    <label>
+                    <label htmlFor='NumberOfParticipants' className='flex justify-start font-semibold'>
                         Number of participants:
-                        <input className="form-smallNumber" 
+                    </label>
+                    <input className="form-smallNumber" 
                         type="text" 
                         required 
+                        id='NumberOfParticipants'
                         placeholder="Ex. 50"
                         {...register("NumberOfParticipants")}/>
-                    </label>
-                    <label>
+                    <label htmlFor='FamilyContactNumber' className='flex justify-start font-semibold' >
                         Contact Number of the Family:
-                        <input className="form-date-time-phoneNumber" 
+                    </label>
+                    <input className="form-date-time-phoneNumber" 
                         type="number" 
                         required 
+                        id='FamilyContactNumber'
                         placeholder="Ex. 0912 345 6789"
                         {...register("FamilyContactNumber")}/>
-                    </label>
-                    <label>
+                    <label htmlFor='ScheduleDay' className='flex justify-start font-semibold' >
                         Schedule (Day):
-                        <input className="form-date-time-phoneNumber" 
+                    </label>
+                    <input className="form-date-time-phoneNumber" 
                         type="date" 
                         required 
+                        id='ScheduleDay'
                         {...register("ScheduleDay")}/>
-                    </label>
-                    <label>
+                    <label htmlFor='ScheduleTime' className='flex justify-start font-semibold' >
                         Schedule (Time):
-                        <input className="form-date-time-phoneNumber" 
+                    </label>
+                    <input className="form-date-time-phoneNumber" 
                         type="time" 
                         required 
+                        id='ScheduleTime'
                         {...register("ScheduleTime")}/>
-                    </label>
                 </div>
                 <SubmitButtonForm />
             </form>

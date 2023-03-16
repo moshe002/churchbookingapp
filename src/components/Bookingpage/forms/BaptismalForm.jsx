@@ -41,101 +41,112 @@ const BaptismalForm = () => {
         <div className="flex flex-col p-0 md:p-10 text-center">
             <form onSubmit={handleSubmit(submit)}>
                 {/* ---------------------------------------- */}
-                <div className="flex flex-col justify-start gap-4 md:border-2 py-10 md:p-10 mb-5">
+                <div className="flex flex-col gap-4 md:border-2 py-10 md:p-10 mb-5">
                     <h1 className="text-lg font-semibold text-center pb-10">Child Details:</h1>
-                    <label>
-                        Complete Name of the Child:
-                        <br/>
-                        <input className="w-60" 
-                        type="text" required 
+                    <label htmlFor='NameOfChild' className='flex justify-start font-semibold'>
+                        Complete Name of the Child:                        
+                    </label>
+                    <input className="w-full rounded-md" 
+                        type="text" 
+                        id='NameOfChild'
+                        required 
                         placeholder="Ex. Jon Something Something"
                         {...register("NameOfChild")}/>
-                    </label>
-                    <label>
+                    <label htmlFor='BirthdateOfChild' className='flex justify-start font-semibold'>
                         Birthdate of Child:
-                        <input className="w-40" 
+                    </label>
+                    <input className="w-full rounded-md" 
                         type="date" 
+                        id='BirthdateOfChild'
                         required
                         {...register("BirthdateOfChild")}/>
-                    </label>
-                    <label>
+                    <label htmlFor='BirthplaceOfChild' className='flex justify-start font-semibold'>
                         Birthplace of Child:
-                        <input className="w-60" 
+                    </label>
+                    <input className="w-full rounded-md" 
                         type="text" 
+                        id='BirthplaceOfChild'
                         required 
                         placeholder="Ex. Cebu City"
                         {...register("BirthplaceOfChild")}/>
-                    </label>
-                    <label>
+                    <label htmlFor='AgeOfChild' className='flex justify-start font-semibold'>
                         Age of Child:
-                        <input className="w-28" 
+                    </label>
+                    <input className="w-full rounded-md" 
                         type="text" 
+                        id='AgeOfChild'
                         required 
                         placeholder="Ex. 2 months or 2 yo"
                         {...register("AgeOfChild")}/>
-                    </label>
                 </div>
                 {/* ---------------------------------------- */}
-                <div className="flex flex-col md:grid md:grid-cols-3 gap-4 md:border-2 py-10 md:p-10 mb-5">
+                <div className="flex flex-col gap-4 md:border-2 py-10 md:p-10 mb-5">
                     <h1 className="text-lg font-semibold text-center pb-10">Details of the Parents:</h1>
-                    <label>
+                    <label htmlFor='NameOfFather' className='flex justify-start font-semibold'>
                         Name of Father:
-                        <input className="w-60" 
+                    </label>
+                    <input className="w-full rounded-md" 
                         type="text" 
+                        id='NameOfFather'
                         required 
                         placeholder="Ex. John Cena"
                         {...register("NameOfFather")}/>
-                    </label>
-                    <label>
+                    <label htmlFor='NameOfMother' className='flex justify-start font-semibold'>
                         Name of Mother:
-                        <input className="w-60" 
+                    </label>
+                    <input className="w-full rounded-md" 
                         type="text" 
+                        id='NameOfMother'
                         required 
                         placeholder="Ex. Jenna Cena"
                         {...register("NameOfMother")}/>
-                    </label>
-                    <label>
+                    <label htmlFor='AddressOfParents' className='flex justify-start font-semibold'>
                         Complete Home Address of the Parents:
-                        <input className="w-60" 
+                    </label>
+                    <input className="w-full rounded-md" 
                         type="text" 
+                        id='AddressOfParents'
                         required 
                         placeholder="Ex. Didto sa kuan"
                         {...register("AddressOfParents")}/>
-                    </label>
-                    <label>
+                    <label htmlFor='ContactNumberOfParents' className='flex justify-start font-semibold'>
                         Contact Number of the Parents:
-                        <input className="w-40" 
+                    </label>
+                    <input className="w-full rounded-md" 
                         type="number" 
+                        id='ContactNumberOfParents'
                         required 
                         placeholder="0999 999 9999" 
                         {...register("ContactNumberOfParents")}/>
-                    </label>
                 </div>
                 {/* ---------------------------------------- */}
-                <div className="flex flex-col md:grid md:grid-cols-3 gap-4 md:border-2 py-10 md:p-10 mb-5">
+                <div className="flex flex-col gap-4 md:border-2 py-10 md:p-10 mb-5">
                     <h1 className="text-lg font-semibold text-center pb-10">Other Details:</h1>
-                    <label>
+                    <label htmlFor='NumberOfParticipants' className='flex justify-start font-semibold'>
                         Number of Participants:
-                        <input className="w-40" 
+                    </label>
+                    <input className="w-full rounded-md" 
                         type="number" 
+                        id='NumberOfParticipants'
                         required 
                         placeholder="Ex. 50"
                         {...register("NumberOfParticipants")}/>
-                    </label>
-                    <label>
+                    <label htmlFor='ScheduleDay' className='flex justify-start font-semibold'>
                         Schedule (Day):
-                        <input className="w-40" 
+                    </label>
+                    <input className="w-full rounded-md" 
                         type="date" 
+                        id='ScheduleDay'
                         required
                         {...register("ScheduleDay")}/>
-                    </label>
-                    <label>
+                    <label htmlFor='ScheduleTime' className='flex justify-start font-semibold'>
                         Schedule (Time):
-                        <input className="w-40" 
+                    </label>
+                    <input className="w-full rounded-md" 
                         type="time" 
+                        id='ScheduleTime'
                         required
                         {...register("ScheduleTime")}/>
-                    </label>
                 </div>
                 <SubmitButtonForm /> 
             </form>

@@ -1,5 +1,6 @@
 import Body from '../components/Homepage/BodyText';
 import Slider from '../components/Homepage/Slider';
+import Verse from '../components/Homepage/Verse';
 
 function HomePage () {
     return (
@@ -7,6 +8,7 @@ function HomePage () {
         <div className="flex flex-col justify-center items-center pb-14">
             <Body />
             <Slider />
+            <Verse />
         </div>
     </div>
     )

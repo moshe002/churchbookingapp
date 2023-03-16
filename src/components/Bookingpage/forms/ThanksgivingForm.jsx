@@ -40,38 +40,42 @@ const ThanksgivingForm = () => {
             <form onSubmit={handleSubmit(submit)}>
                 <div className="form-divs">
                     <h1 className="form-h1-divs">Form Details:</h1>
-                    <label>
+                    <label htmlFor='SenderName' className='flex justify-start font-semibold' >
                         Name of the sender:
-                        <input className="form-text" 
+                    </label>
+                    <input className="form-text" 
                         type="text" 
                         required 
+                        id='SenderName'
                         placeholder="Ex. Rodrigo Duterts"
                         {...register("SenderName")}/>
-                    </label>
-                    <label>
+                    <label htmlFor='PrayerReason' className='flex justify-start font-semibold' >
                         Reason for Thanksgiving Prayer:
-                        <textarea className="form-text" 
+                    </label>
+                    <textarea className="form-text" 
                         type="text" 
                         required 
+                        id='PrayerReason'
                         placeholder="Ex. I passed the Engineering Exam"
                         {...register("PrayerReason")}/>
-                    </label>
-                    <label>
+                    <label htmlFor='SenderAddress' className='flex justify-start font-semibold' >
                         Complete Home Address of the sender:
-                        <input className="form-text" 
+                    </label>
+                    <input className="form-text" 
                         type="text" 
                         required 
+                        id='SenderAddress'
                         placeholder="Ex. Luray, Toledo City"
                         {...register("SenderAddress")}/>
-                    </label>
-                    <label>
+                    <label htmlFor='ContactNumber' className='flex justify-start font-semibold' >
                         Contact Number of the sender:
-                        <input className="form-date-time-phoneNumber" 
+                    </label>
+                    <input className="form-date-time-phoneNumber" 
                         type="text" 
                         required 
+                        id='ContactNumber'
                         placeholder="099 9999 9999"
                         {...register("ContactNumber")}/>
-                    </label>
                 </div>
                 <SubmitButtonForm />
             </form>

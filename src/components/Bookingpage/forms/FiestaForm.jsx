@@ -47,64 +47,71 @@ const FiestaForm = () => {
                 {/* ---------------------------------------- */}
                 <div className="form-divs">
                     <h1 className="form-h1-divs">Event Details:</h1>
-                    <label>
+                    <label htmlFor='EventLocation' className='flex justify-start font-semibold' >
                         Location of the Event:
-                        <input className="form-text" 
+                    </label>
+                    <input className="form-text" 
                         type="text" 
                         required 
+                        id='EventLocation'
                         placeholder='Ex. Cebu City'
                         {...register("EventLocation")}/>
-                    </label>
-                    <label>
+                    <label htmlFor='ChapelLocation' className='flex justify-start font-semibold' >
                         Location of the Chapel:
-                        <input className="form-text" 
+                    </label>
+                    <input className="form-text" 
                         type="text" 
                         required 
+                        id='ChapelLocation'
                         placeholder='Ex. near basketball court'
                         {...register("ChapelLocation")}/>
-                    </label>
-                    <label>
+                    <label htmlFor='ChapelDevotee' className='flex justify-start font-semibold' >
                         Chapel Devotee:
-                        <input className="form-text" 
+                    </label>
+                    <input className="form-text" 
                         type="text" 
                         required 
+                        id='ChapelDevotee'
                         placeholder='Ex. Mother Mary of Fatima'
                         {...register("ChapelDevotee")}/>
-                    </label>
-                    <label>
+                    <label htmlFor='ContactNumber' className='flex justify-start font-semibold' >
                         Contact Number:
-                        <input className="form-date-time-phoneNumber" 
+                    </label>
+                    <input className="form-date-time-phoneNumber" 
                         type="number" 
                         required 
+                        id='ContactNumber'
                         placeholder='099 9999 9999'
                         {...register("ContactNumber")}/>
-                    </label>
                 </div>
                 {/* ---------------------------------------- */}
                 <div className="form-divs">
                     <h1 className="form-h1-divs">Other Details:</h1>
-                    <label>
+                    <label htmlFor='NumberOfParticipants' className='flex justify-start font-semibold' >
                         Number of Participants:
-                        <input className="form-smallNumber" 
+                    </label>
+                    <input className="form-smallNumber" 
                         type="text" 
                         required 
+                        id='NumberOfParticipants'
                         placeholder='Ex. 50'
                         {...register("NumberOfParticipants")}/>
-                    </label>
-                    <label>
+                    <label htmlFor='ScheduleDay' className='flex justify-start font-semibold' >
                         Schedule (Day):
-                        <input className="form-date-time-phoneNumber" 
+                    </label>
+                    <input className="form-date-time-phoneNumber" 
                         type="date" 
                         required 
+                        id='ScheduleDay'
                         {...register("ScheduleDay")}/>
-                    </label>
-                    <label>
+                    <label htmlFor='ScheduleTime' className='flex justify-start font-semibold' >
                         Schedule (Time):
-                        <input className="form-date-time-phoneNumber" 
+                    </label>
+                    <input className="form-date-time-phoneNumber" 
                         type="time"
                         required 
+                        id='ScheduleTime'
                         {...register("ScheduleTime")}/>
-                    </label>
                 </div>
                 <SubmitButtonForm />
             </form>

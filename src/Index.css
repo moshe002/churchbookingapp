@@ -8,7 +8,7 @@
   }
 
   .form-divs {
-    @apply flex flex-col md:grid md:grid-cols-3 gap-4 md:border-2 py-10 md:p-10 mb-5;
+    @apply flex flex-col gap-4 md:border-2 py-10 md:p-10 mb-5;
   }
 
   .form-h1-divs {
@@ -16,15 +16,15 @@
   }
 
   .form-text {
-    @apply w-60;
+    @apply w-full rounded-md;
   }
 
   .form-smallNumber {
-    @apply w-28;
+    @apply w-full rounded-md;
   }
 
   .form-date-time-phoneNumber {
-    @apply w-40;
+    @apply w-full rounded-md;
   }
 
   .form-submit-btn {

@@ -22,7 +22,7 @@ function BookingPage () {
                 <Dropdown 
                 style={{ background: '#4D82DF' }}
                 size="lg"
-                label="Choose the type of Prayer or Event you want to book">
+                label="Book an Event">
                     <div className='w-40 sm:w-80 font-semibold'>
                         <Dropdown.Item
                         onClick={() => setShowOption(<Wedding />)}>

@@ -54,194 +54,216 @@ const WeddingForm = () => {
         <div className="flex flex-col p-0 md:p-10 text-center">
             <form onSubmit={handleSubmit(submit)}>
                 {/* ---------------------------------------- */}
-                <div className="flex flex-col md:grid md:grid-cols-3 gap-4 md:border-2 py-10 md:p-10 mb-5">
+                <div className="flex flex-col gap-4 md:border-2 py-10 md:p-10 mb-5">
                     <h1 className="text-lg font-semibold text-center pb-10">Details of the Newly Weds:</h1>
-                    <label>
+                    <label htmlFor='NameOfGroom' className='flex justify-start font-semibold' >
                         Complete Name of Groom:
-                        <input className="w-60" 
+                    </label>
+                    <input className="w-full rounded-md" 
                         required 
                         placeholder="Ex. Juan D. Cruz" 
-                        type="text" 
+                        type="text"
+                        id='NameOfGroom' 
                         {...register("NameOfGroom")} />
-                    </label>
-                    <label>
+                    <label htmlFor='AgeOfGroom' className='flex justify-start font-semibold' >
                         Age of Groom:
-                        <input className="w-28" 
+                    </label>
+                    <input className="w-full rounded-md" 
                         required 
                         placeholder="Ex. 20yo" 
-                        type="number" 
+                        type="number"
+                        id='AgeOfGroom' 
                         {...register("AgeOfGroom")} />
-                    </label>
-                    <label>
+                    <label htmlFor='AddressOfGroom' className='flex justify-start font-semibold' >
                         Home Address of Groom:
-                        <input className="w-60" 
+                    </label>
+                    <input className="w-full rounded-md" 
                         required 
                         placeholder="Ex. Deca Homes Cebu City" 
                         type="text" 
+                        id='AddressOfGroom'
                         {...register("AddressOfGroom")} />
-                    </label>
-                    <label>
+                    <label htmlFor='NameOfBride' className='flex justify-start font-semibold' >
                         Complete Name of Bride:
-                        <input className="w-60" 
+                    </label>
+                    <input className="w-full rounded-md" 
                         required 
                         placeholder="Ex. Maria C. Lara" 
                         type="text" 
+                        id='NameOfBride'
                         {...register("NameOfBride")} />
-                    </label>
-                    <label>
+                    <label htmlFor='AgeOfBride' className='flex justify-start font-semibold' >
                         Age of Bride:
-                        <input className="w-28" 
+                    </label>
+                    <input className="w-full rounded-md" 
                         required 
                         placeholder="Ex. 20yo" 
                         type="number" 
+                        id='AgeOfBride'
                         {...register("AgeOfBride")} />
-                    </label>
-                    <label>
+                    <label htmlFor='AddressOfBride' className='flex justify-start font-semibold' >
                         Home Address of Bride:
-                        <input className="w-60" 
+                    </label>
+                    <input className="w-full rounded-md" 
                         required 
                         placeholder="Ex. Deca Homes Cebu City" 
                         type="text" 
+                        id='AddressOfBride'
                         {...register("AddressOfBride")} />
-                    </label>
                 </div>
                 {/* ---------------------------------------- */}
-                <div className="flex flex-col md:grid md:grid-cols-3 gap-4 md:border-2 py-10 md:p-10 mb-5">
+                <div className="flex flex-col gap-4 md:border-2 py-10 md:p-10 mb-5">
                     <h1 className="text-lg font-semibold text-center pb-10">Parent's Name of the Bride and Groom:</h1>
-                    <label>
+                    <label htmlFor='MotherOfBride' className='flex justify-start font-semibold' >
                         Mother's Name of Bride:
-                        <input className="w-60" 
+                    </label>
+                    <input className="w-full rounded-md" 
                         required 
                         placeholder="Ex. Mama" 
                         type="text" 
+                        id='MotherOfBride'
                         {...register("MotherOfBride")} />
-                    </label>
-                    <label>
+                    <label htmlFor='FatherOfBride' className='flex justify-start font-semibold' >
                         Father's Name of Bride:
-                        <input className="w-60" 
+                    </label>
+                    <input className="w-full rounded-md" 
                         required 
                         placeholder="Ex. Papa" 
                         type="text" 
+                        id='FatherOfBride'
                         {...register("FatherOfBride")} />
-                    </label>
-                    <label>
+                    <label htmlFor='AdrressOfBrideParents' className='flex justify-start font-semibold' >
                         Home Address of Bride's Mother and Father:
-                        <input className="w-60" 
+                    </label>
+                    <input className="w-full rounded-md" 
                         required 
                         placeholder="Ex. Deca Homes Cebu City" 
-                        type="text" 
+                        type="text"
+                        id='AdrressOfBrideParents' 
                         {...register("AdrressOfBrideParents")} />
-                    </label>
-                    <label>
+                    <label htmlFor='MotherOfGroom' className='flex justify-start font-semibold' >
                         Mother's Name of Groom:
-                        <input className="w-60" 
+                    </label>
+                    <input className="w-full rounded-md" 
                         required 
                         placeholder="Ex. Mama" 
-                        type="text" 
+                        type="text"
+                        id='MotherOfGroom' 
                         {...register("MotherOfGroom")} />
-                    </label>
-                    <label>
+                    <label htmlFor='FatherOfGroom' className='flex justify-start font-semibold' >
                         Father's Name of Groom:
-                        <input className="w-60" 
+                    </label>
+                    <input className="w-full rounded-md" 
                         required 
                         placeholder="Ex. Papa" 
                         type="text" 
+                        id='FatherOfGroom'
                         {...register("FatherOfGroom")} />
-                    </label>
-                    <label>
+                    <label htmlFor='AdrressOfGroomParents' className='flex justify-start font-semibold' >
                         Home Address of Groom's Mother and Father:
-                        <input className="w-60" 
+                    </label>
+                    <input className="w-full rounded-md" 
                         required 
                         placeholder="Ex. Deca Homes Cebu City" 
                         type="text" 
+                        id='AdrressOfGroomParents'
                         {...register("AdrressOfGroomParents")} />
-                    </label>
                 </div>
                 {/* ---------------------------------------- */}
-                <div className="flex flex-col md:grid md:grid-cols-3 gap-4 md:border-2 py-10 md:p-10 mb-5">
+                <div className="flex flex-col gap-4 md:border-2 py-10 md:p-10 mb-5">
                     <h1 className="text-lg font-semibold text-center pb-10">Readers and Bearers:</h1>
-                    <label>
+                    <label htmlFor='FirstReading' className='flex justify-start font-semibold' >
                         Reader of the First Reading:
-                        <input className="w-60" 
+                    </label>
+                    <input className="w-full rounded-md" 
                         required 
                         placeholder="Ex. Maria" 
                         type="text" 
+                        id='FirstReading'
                         {...register("FirstReading")} />
-                    </label>
-                    <label>
+                    <label htmlFor='SecondReading' className='flex justify-start font-semibold' >
                         Reader of the Second Reading:
-                        <input className="w-60" 
+                    </label>
+                    <input className="w-full rounded-md" 
                         required 
                         placeholder="Ex. Maria" 
                         type="text" 
+                        id='SecondReading'
                         {...register("SecondReading")} />
-                    </label>
-                    <label>
+                    <label htmlFor='ResponsorialPsalm' className='flex justify-start font-semibold' >
                         Responsorial Psalm:
-                        <input className="w-60" 
+                    </label>
+                    <input className="w-full rounded-md" 
                         required 
                         placeholder="Ex. Maria" 
                         type="text" 
+                        id='ResponsorialPsalm'
                         {...register("ResponsorialPsalm")} />
-                    </label>
-                    <label>
+                    <label htmlFor='RingBearer' className='flex justify-start font-semibold' >
                         Name of Ring Bearer:
-                        <input className="w-60" 
+                    </label>
+                    <input className="w-full rounded-md" 
                         required 
                         placeholder="Ex. Joseph" 
                         type="text" 
+                        id='RingBearer'
                         {...register("RingBearer")} />
-                    </label>
-                    <label>
+                    <label htmlFor='MoneyBearer' className='flex justify-start font-semibold' >
                         Name of Money Bearer:
-                        <input className="w-60" 
+                    </label>
+                    <input className="w-full rounded-md" 
                         required 
                         placeholder="Ex. Joseph" 
                         type="text" 
+                        id='MoneyBearer'
                         {...register("MoneyBearer")} />
-                    </label>
-                    <label>
+                    <label htmlFor='BibleBearer' className='flex justify-start font-semibold' >
                         Name of Bible Bearer:
-                        <input className="w-60" 
+                    </label>
+                    <input className="w-full rounded-md" 
                         required 
                         placeholder="Ex. Joseph" 
                         type="text" 
+                        id='BibleBearer'
                         {...register("BibleBearer")} />
-                    </label>
-                    <label>
+                    <label htmlFor='FlowerGirls' className='flex justify-start font-semibold' >
                         Number of Flower Girls:
-                        <input className="w-28" 
+                    </label>
+                    <input className="w-full rounded-md" 
                         required 
                         placeholder="Ex. 5" 
                         type="number" 
+                        id='FlowerGirls'
                         {...register("FlowerGirls")} />
-                    </label>
                 </div>
                 {/* ---------------------------------------- */}
-                <div className="flex flex-col md:grid md:grid-cols-3 gap-4 md:border-2 py-10 md:p-10 mb-5">
+                <div className="flex flex-col gap-4 md:border-2 py-10 md:p-10 mb-5">
                     <h1 className="text-lg font-semibold text-center pb-10">Details on the event:</h1>
-                    <label>
+                    <label htmlFor='ScheduleDay' className='flex justify-start font-semibold' >
                         Schedule (Day):
-                        <input className="w-40" 
+                    </label>
+                    <input className="w-full rounded-md" 
                         required 
                         type="date" 
+                        id='ScheduleDay'
                         {...register("ScheduleDay")}/> 
-                    </label>
-                    <label>
+                    <label htmlFor='ScheduleTime' className='flex justify-start font-semibold' >
                         Schedule (Time):
-                        <input className="w-40" 
+                    </label>
+                    <input className="w-full rounded-md" 
                         required 
                         type="time" 
+                        id='ScheduleTime'
                         {...register("ScheduleTime")} /> 
-                    </label>
-                    <label>
+                    <label htmlFor='BrideGroomPhoneNumber' className='flex justify-start font-semibold' >
                         Contact Number of the Bride and Groom:
-                        <input className="w-40" 
+                    </label>
+                    <input className="w-full rounded-md" 
                         required 
                         type="number" 
+                        id='BrideGroomPhoneNumber'
                         placeholder="091 2345 6789" 
                         {...register("BrideGroomPhoneNumber")} />
-                    </label>
                 </div>
                 <SubmitButtonForm />
             </form>

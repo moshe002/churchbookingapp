@@ -8,7 +8,7 @@
   }
 
   .form-divs {
-    @apply flex flex-col gap-4 md:border-2 py-10 md:p-10 mb-5;
+    @apply flex flex-col gap-4 md:border-2 py-10 md:p-10 mb-5 bg-gray-300 rounded-md;
   }
 
   .form-h1-divs {

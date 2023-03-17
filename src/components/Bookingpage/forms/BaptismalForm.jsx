@@ -41,7 +41,7 @@ const BaptismalForm = () => {
         <div className="flex flex-col p-0 md:p-10 text-center">
             <form onSubmit={handleSubmit(submit)}>
                 {/* ---------------------------------------- */}
-                <div className="flex flex-col gap-4 md:border-2 py-10 md:p-10 mb-5">
+                <div className="flex flex-col gap-4 md:border-2 py-10 md:p-10 mb-5 bg-gray-300 rounded-md">
                     <h1 className="text-lg font-semibold text-center pb-10">Child Details:</h1>
                     <label htmlFor='NameOfChild' className='flex justify-start font-semibold'>
                         Complete Name of the Child:                        
@@ -80,7 +80,7 @@ const BaptismalForm = () => {
                         {...register("AgeOfChild")}/>
                 </div>
                 {/* ---------------------------------------- */}
-                <div className="flex flex-col gap-4 md:border-2 py-10 md:p-10 mb-5">
+                <div className="flex flex-col gap-4 md:border-2 py-10 md:p-10 mb-5 bg-gray-300 rounded-md">
                     <h1 className="text-lg font-semibold text-center pb-10">Details of the Parents:</h1>
                     <label htmlFor='NameOfFather' className='flex justify-start font-semibold'>
                         Name of Father:
@@ -120,7 +120,7 @@ const BaptismalForm = () => {
                         {...register("ContactNumberOfParents")}/>
                 </div>
                 {/* ---------------------------------------- */}
-                <div className="flex flex-col gap-4 md:border-2 py-10 md:p-10 mb-5">
+                <div className="flex flex-col gap-4 md:border-2 py-10 md:p-10 mb-5 bg-gray-300 rounded-md">
                     <h1 className="text-lg font-semibold text-center pb-10">Other Details:</h1>
                     <label htmlFor='NumberOfParticipants' className='flex justify-start font-semibold'>
                         Number of Participants:

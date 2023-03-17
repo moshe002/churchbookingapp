@@ -54,7 +54,7 @@ const WeddingForm = () => {
         <div className="flex flex-col p-0 md:p-10 text-center">
             <form onSubmit={handleSubmit(submit)}>
                 {/* ---------------------------------------- */}
-                <div className="flex flex-col gap-4 md:border-2 py-10 md:p-10 mb-5">
+                <div className="flex flex-col gap-4 md:border-2 py-10 md:p-10 mb-5 bg-gray-300 rounded-md">
                     <h1 className="text-lg font-semibold text-center pb-10">Details of the Newly Weds:</h1>
                     <label htmlFor='NameOfGroom' className='flex justify-start font-semibold' >
                         Complete Name of Groom:
@@ -112,7 +112,7 @@ const WeddingForm = () => {
                         {...register("AddressOfBride")} />
                 </div>
                 {/* ---------------------------------------- */}
-                <div className="flex flex-col gap-4 md:border-2 py-10 md:p-10 mb-5">
+                <div className="flex flex-col gap-4 md:border-2 py-10 md:p-10 mb-5 bg-gray-300 rounded-md">
                     <h1 className="text-lg font-semibold text-center pb-10">Parent's Name of the Bride and Groom:</h1>
                     <label htmlFor='MotherOfBride' className='flex justify-start font-semibold' >
                         Mother's Name of Bride:
@@ -170,7 +170,7 @@ const WeddingForm = () => {
                         {...register("AdrressOfGroomParents")} />
                 </div>
                 {/* ---------------------------------------- */}
-                <div className="flex flex-col gap-4 md:border-2 py-10 md:p-10 mb-5">
+                <div className="flex flex-col gap-4 md:border-2 py-10 md:p-10 mb-5 bg-gray-300 rounded-md">
                     <h1 className="text-lg font-semibold text-center pb-10">Readers and Bearers:</h1>
                     <label htmlFor='FirstReading' className='flex justify-start font-semibold' >
                         Reader of the First Reading:
@@ -237,7 +237,7 @@ const WeddingForm = () => {
                         {...register("FlowerGirls")} />
                 </div>
                 {/* ---------------------------------------- */}
-                <div className="flex flex-col gap-4 md:border-2 py-10 md:p-10 mb-5">
+                <div className="flex flex-col gap-4 md:border-2 py-10 md:p-10 mb-5 bg-gray-300 rounded-md">
                     <h1 className="text-lg font-semibold text-center pb-10">Details on the event:</h1>
                     <label htmlFor='ScheduleDay' className='flex justify-start font-semibold' >
                         Schedule (Day):

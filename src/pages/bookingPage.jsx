@@ -16,7 +16,7 @@ function BookingPage () {
     const [showOption, setShowOption] = useState()
 
     return (
-        <div className="flex flex-col justify-center items-center p-10">
+        <div id='bookingpage' className="flex flex-col justify-center items-center p-10">
             <h2 className="pl-7 sm:pl-0 text-2xl sm:text-5xl font-semibold">Booking Page</h2> 
             <div className="pl-10 sm:pl-0 mt-20">
                 <Dropdown 

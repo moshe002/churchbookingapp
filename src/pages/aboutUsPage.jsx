@@ -17,7 +17,7 @@ import NeriPic from '../assets/neri.jpg';
 
 function AboutUs () {
     return (
-        <div className="flex flex-col justify-center items-center pb-8">
+        <div id='aboutus' className="flex flex-col justify-center items-center pb-8">
             <div className="p-14 w-full text-center">
                 <p className="text-2xl sm:text-5xl font-semibold">About Us</p>
                 <div className='flex flex-row gap-5 justify-center items-center mt-5'>

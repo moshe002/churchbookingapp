@@ -20,7 +20,7 @@ function LiveMassPage () {
     }
 
     return (
-        <div className="flex flex-col justify-center items-center p-10 border-b-4 border-t-4">
+        <div id='livemass' className="flex flex-col justify-center items-center p-10 border-b-4 border-t-4">
             <h2 className="text-center ml-12 sm:ml-0 text-2xl sm:text-5xl font-semibold">Live Mass Recordings</h2>
             <div className='flex flex-col p-10 mt-10 ml-10 sm:ml-0'>
                 <ul>

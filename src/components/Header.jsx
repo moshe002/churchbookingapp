@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { Link } from 'react-scroll';
 
 import { BiMenu } from 'react-icons/bi';
 import { BiX } from 'react-icons/bi';
@@ -44,10 +45,26 @@ function Header() {
             <Hamburger isOpen={isOpen} handleClick={handleClick} />
             :
             <>
-              <button className='hover:underline'>Home</button>
-              <button className='hover:underline'>Booking</button>
-              <button className='hover:underline'>Mass</button>
-              <button className='hover:underline'>About</button>
+              <button className='hover:underline'>
+                <Link activeClass='active' smooth spy to='homepage' >
+                  Home
+                </Link>
+              </button>
+              <button className='hover:underline'>
+                <Link activeClass='active' smooth spy to='bookingpage' >
+                  Booking
+                </Link>
+              </button>
+              <button className='hover:underline'>
+                <Link activeClass='active' smooth spy to='livemass' >
+                  Mass
+                </Link>
+              </button>
+              <button className='hover:underline'>
+                <Link activeClass='active' smooth spy to='aboutus' >
+                  About
+                </Link>
+              </button>
             </> 
           }
         </div>
@@ -85,10 +102,26 @@ const Nav = ({ isOpen }) => {
         ?
         <>
           <div className='flex flex-col justify-center w-full gap-2 p-2 z-10'>
-            <button className='font-semibold p-1 hover:bg-gray-400 hover:text-white duration-100'>Home</button>
-            <button className='font-semibold p-1 hover:bg-gray-400 hover:text-white duration-100'>Booking</button>
-            <button className='font-semibold p-1 hover:bg-gray-400 hover:text-white duration-100'>Mass</button>
-            <button className='font-semibold p-1 hover:bg-gray-400 hover:text-white duration-100'>About</button>
+            <button className='font-semibold p-1 hover:bg-gray-400 hover:text-white duration-100'>
+              <Link activeClass='active' smooth spy to='homepage' >
+                Home
+              </Link>
+            </button>
+            <button className='font-semibold p-1 hover:bg-gray-400 hover:text-white duration-100'>
+              <Link activeClass='active' smooth spy to='bookingpage' >
+                Booking
+              </Link>
+            </button>
+            <button className='font-semibold p-1 hover:bg-gray-400 hover:text-white duration-100'>
+              <Link activeClass='active' smooth spy to='livemass' >
+                Mass
+              </Link>
+            </button>
+            <button className='font-semibold p-1 hover:bg-gray-400 hover:text-white duration-100'>
+              <Link activeClass='active' smooth spy to='aboutus' >
+                About
+              </Link>
+            </button>
           </div>
         </>
         :

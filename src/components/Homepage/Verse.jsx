@@ -47,7 +47,7 @@ function Verse() {
     fetch(`https://api.scripture.api.bible/v1/bibles/${BIBLE_ID}/search?query=${verseID}`, options)
     .then(response => response.json())
     .then(res => {
-      console.log(res)
+      //console.log(res)
       setVerse(res.data.passages)
     })
     .catch(err => console.log(err))

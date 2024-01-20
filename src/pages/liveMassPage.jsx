@@ -13,7 +13,7 @@ function LiveMassPage () {
         fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCKUsvn9QGIwiX8fjCNmetWA&maxResults=2&q=live%20mass&key=AIzaSyDWV26jvrvKzoLMky6RLHJS8xELSvONIj8`)
         .then((res) => res.json())
         .then((data) => {
-            console.log(data.items)
+            //console.log(data.items)
             setVideo(data.items)
         })
         
